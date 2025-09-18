@@ -13,6 +13,7 @@ update-database
 This will create and configure the database for the application.
 
 Note: If using visual studio, you can access the NuGet Package Manager Console easily by selecting Tools > NuGet Package Manager > Package Manager Console.
+
 <img width="1109" height="438" alt="image" src="https://github.com/user-attachments/assets/d6a8339f-4ef2-4d33-b51a-b8649e492b4c" />
 
 
@@ -32,6 +33,7 @@ Locate the following section on line 132:
 //await _userManager.AddToRoleAsync(user, "Admin"); // TEMPORARY
 
 await _userManager.AddToRoleAsync(user, "User");   // after initial setup
+
 <img width="1082" height="890" alt="image" src="https://github.com/user-attachments/assets/092a2153-1f3d-4cbc-aa8d-a95b9800ffed" />
 
 Swap the commented line so that Admin is enabled instead of User.
@@ -65,10 +67,12 @@ Bootstrap – Frontend styling and layout
 
 C# – Primary programming language
 
+HTML - Secondary programming language
+
 
 📸 Application Preview
 
-Below are screenshots of the application running with a fully functional database (cart system, product listings, and admin pages).
+Below are screenshots of the application running with a fully functional database (cart system, product listings, and checkout page).
 
 <img width="1916" height="908" alt="image" src="https://github.com/user-attachments/assets/978b5911-681e-4e74-97c8-dcc31d3fa41e" />
 <img width="1916" height="908" alt="image" src="https://github.com/user-attachments/assets/dcea21dd-0c3d-4bc7-b950-6861c5ab9cda" />
