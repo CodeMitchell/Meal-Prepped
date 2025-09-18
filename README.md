@@ -24,11 +24,13 @@ By default, new accounts are registered as User. To set up an Admin account duri
 
 Open the file:
 Areas/Identity/Pages/Account/Register.cshtml.cs
+
 <img width="292" height="575" alt="image" src="https://github.com/user-attachments/assets/ca51ca78-24b8-45fd-8a7f-ef03108cb09f" />
 
 Locate the following section on line 132:
 
 //await _userManager.AddToRoleAsync(user, "Admin"); // TEMPORARY
+
 await _userManager.AddToRoleAsync(user, "User");   // after initial setup
 <img width="1082" height="890" alt="image" src="https://github.com/user-attachments/assets/092a2153-1f3d-4cbc-aa8d-a95b9800ffed" />
 
