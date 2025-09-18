@@ -1,0 +1,37 @@
+﻿@page
+@model SectionJLab.Pages.OrderDetailsModel
+@{
+    ViewData["Title"] = "Order Details";
+}
+
+<h1>Order Details</h1>
+
+<h3 class="text-center">Order #@Model.Order.ID</h3>
+<p>Customer: @Model.Order.FirstName @Model.Order.LastName</p>
+<p>Order Date: @Model.Order.OrderDate.ToString("yyyy-MM-dd")</p>
+<p>Total Amount: $@Model.Order.TotalAmount.ToString("F2")</p>
+
+<h3>Items:</h3>
+<table class="table rounded-table">
+    <thead>
+        <tr>
+            <th>Item Name</th>
+            <th>Picture</th>
+            <th>Quantity</th>
+            <th>Price</th>
+            <th>Total Price</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.OrderItems)
+        {
+            <tr>
+                <td>@item.MenuItem.Name</td>
+                <td><img class="fluid" src="~/images/@item.MenuItem.Picture" alt="@item.MenuItem.Name" style="width: 50px; height: auto;" /></td>
+                <td>@item.Quantity</td>
+                <td>$@item.MenuItem.Price.ToString("F2")</td>
+                <td>$@item.TotalPrice.ToString("F2")</td>
+            </tr>
+        }
+    </tbody>
+</table>

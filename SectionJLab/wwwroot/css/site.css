@@ -1,0 +1,159 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+    background-image: url(/images/foodBG.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+#registerForm {
+    padding: 20px; 
+    background-color: #f9f9f9; 
+    border-radius: 10px; 
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); 
+}
+
+#account {
+    padding: 20px; 
+    background-color: #f9f9f9; 
+    border-radius: 10px; 
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); 
+}
+
+.card {
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.card-img-top {
+    object-fit: contain;
+    height: 200px;
+}
+
+input.form-control {
+    border-radius: 5px;
+}
+
+button.btn-success {
+    font-size: 1.1rem;
+    padding: 12px;
+    border-radius: 5px;
+}
+
+button.btn-success:hover {
+    background-color: #28a745;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 1.2em;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #0056b3;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+    .table td {
+        background-color: #ffffff;
+    }
+
+.table th, .table td {
+    padding: 12px 15px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+.table tbody tr {
+    /*background-color: #ffffff;*/
+}
+
+.table tbody tr:nth-child(even) {
+    /*background-color: #f9f9f9;*/
+}
+
+.table tbody tr:hover {
+    /*background-color: #f1f1f1;*/
+}
+
+.table img.fluid {
+    max-width: 100%;
+    height: auto;
+    width: 100px;
+    border-radius: 5px;
+}
+
+.table td a {
+    padding: 6px 10px;
+    /*background-color: #28a745;*/
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1em;
+    margin: 10px 10px;
+}
+
+.table td a:hover {
+    /*background-color: #218838;*/
+}
+
+.invisible-td {
+    border: none !important;
+    background: transparent !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.rounded-table {
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #dee2e6;
+}
